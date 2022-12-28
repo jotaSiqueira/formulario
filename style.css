@@ -1,0 +1,165 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: black;
+    font-family: 'Open Sans', 'icones', sans-serif;
+    color: #FFFFFF;
+    background-image: url(assets/images/fundo.JPG);
+    padding: 2rem;
+}
+
+.titulo-formulario {
+    font-size: 2em;
+    margin-bottom: 0.9em;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 80%;
+    padding-left: 50%;
+    padding-right: 10%;
+}
+
+img {
+    opacity: 80%;
+}
+
+.principal {
+    padding: 3rem;
+    display: block;
+    background-color: rgb(51, 54, 54);
+    opacity: 100% !important;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+.box {
+    font-size: 26px;
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    white-space: nowrap;
+    gap: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    justify-content: flex-start;
+}
+
+.box input {
+    border-radius: 5px;
+    border: solid 0.3rem rgb(152, 179, 255);
+}
+
+.box .box-nome-sobrenome input{
+    box-sizing: border-box;
+}
+
+.box .box-idade {
+    max-width: 400px;
+
+}
+
+.box .box-idade input{
+    max-width: 45px;
+}
+
+.box .box-mensagem {
+    display: flex;
+    width: 95%;
+}
+
+.texto-mensagem {
+    padding: 10px;
+    margin-bottom: 2em;
+}
+
+.box .box-genero {
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.box .box-genero input {
+    width: 20px;
+}
+
+.botao {
+    color: #FFFFFF;
+    font-weight: 600;
+    background-color: rgb(68, 39, 236);
+    padding: 10px;
+    width: 200px;
+    border-radius: 15px;
+    border: none;
+    border-color: rgb(255, 255, 255);
+    white-space: nowrap;
+    margin: auto auto 2em;
+}
+
+.botao:hover {
+    width: 220px;    
+    transition: .5s;
+}
+
+.footer {
+    text-align: start;
+}
+
+@media screen and (max-width: 1100px){
+    main {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    main {
+    }
+
+    .principal {
+        width: 50%;
+    }
+
+    .form {
+        width: 50%;
+    }
+
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 20px;
+        margin-bottom: 10%;
+    }
+
+    .box-mensagem {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box .box-genero {
+        flex-direction: column;
+    }
+
+    .box .box-genero label {
+        max-width: fit-content;
+    }
+
+    .titulo-formulario {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .titulo-formulario {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .principal {
+        padding: 10%;
+    }
+}

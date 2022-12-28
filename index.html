@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <title>Formulário J</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="principal">
+            <form>
+                <h1 class="titulo-formulario">Formulário</h1>
+                <div class="box">
+                    <div class="box-nome-sobrenome">
+                        <label for="formulario formulario_item">Nome:</label>
+                        <div>   
+                            <input type="text" id="nome" required>
+                        </div>
+                    </div>
+                    <div class="box-nome-sobrenome">
+                        <label for="formulario formulario_item">Sobrenome:</label>
+                        <div>   
+                            <input type="email" id="email" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-idade">
+                        <label for="formulario formulario_item">Idade:</label>
+                        <div>       
+                            <input type="number" id="idade" required>
+                        </div>   
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-email">
+                        <label for="formulario formulario_item">Email:</label>
+                        <div>
+                            <input type="text" id="email" required>
+                        </div>
+                    </div>
+                    <div class="box-telefone">
+                        <label for="formulario formulario_item">Telefone:</label>
+                        <div>
+                            <input type="text" id="telefone" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <legend>Gênero:</legend>
+                    <p></p>
+                    <div class="box-genero">
+                        <div>
+                            <label for="formulario formulario_item">Masculino</label>
+                            <input type="radio" name="genero" value="masculino" id="radio-masculino">
+                        </div>
+                        
+                        <div>
+                            <label for="formulario formulario_item">Feminino</label>
+                            <input type="radio" name="genero" value="feminino" id="radio-feminino">
+                        </div>
+                        
+                        <div>
+                            <label for="formulario formulario_item">Prefiro não dizer</label>
+                            <input type="radio" name="genero" value="masculino" id="radio-masculino">
+                        </div>
+                    </div>
+                </div>
+                    <div class="box-mensagem">
+                        <label for="formulario formulario_item">Mensagem:</label>
+                        <p></p>
+                        <textarea cols="100%" rows="10" id="mensagem" class="texto-mensagem" required></textarea>
+                    </div>
+                
+                <button type="submit" name="enviar" class="botao">ENVIAR DADOS</button>
+            </form>
+            <p class="footer">
+                formulário desenvolvido por J
+            </p>
+        </div>
+    </main>
+    
+</body>
+</html>
